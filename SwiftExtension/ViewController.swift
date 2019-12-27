@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import RxSwift
+import SwifterSwift
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController
+        var foo = [1]
+        let a = 1.2
         // Do any additional setup after loading the view.
     }
 

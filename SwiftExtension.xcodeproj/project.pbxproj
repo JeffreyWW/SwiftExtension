@@ -46,7 +46,6 @@
 				5407D599D4727EC0B5AD5D80 /* Pods-SwiftExtension.debug.xcconfig */,
 				F75E2647ADA84637FE43BEDD /* Pods-SwiftExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
