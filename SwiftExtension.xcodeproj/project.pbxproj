@@ -10,6 +10,7 @@
 		E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA9E190A2EDDA11943303 /* ViewController.swift */; };
 		E52CA343CA88DADAFED906F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52CA56AB12FAED9BFE8EE24 /* Assets.xcassets */; };
 		E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA304638BD019E614F42D /* AppDelegate.swift */; };
+		E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */; };
 		E52CAD8E706451723E464239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CAEAE6C4186EB66A4A556 /* Main.storyboard */; };
 		E52CAFD420487EADBC693EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CA300544DFF978B784543 /* LaunchScreen.storyboard */; };
 		ED6906E53D3E4BD65063C656 /* Pods_SwiftExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BF482332BFA668F862FB6F /* Pods_SwiftExtension.framework */; };
@@ -21,6 +22,7 @@
 		E52CA304638BD019E614F42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52CA56AB12FAED9BFE8EE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52CA8F539C9D4C664FEF208 /* SwiftExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
 		E52CA9E190A2EDDA11943303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52CAB0B880D81D05BC10B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52CAC05AC3CBFD784F53D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E52CA3F57D7D475CAD95C5DE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E52CA4970694E42F4931595C /* SwiftExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 				E52CA304638BD019E614F42D /* AppDelegate.swift */,
 				E52CA9E190A2EDDA11943303 /* ViewController.swift */,
 				E52CAEAE6C4186EB66A4A556 /* Main.storyboard */,
+				E52CA3F57D7D475CAD95C5DE /* Extension */,
 			);
 			path = SwiftExtension;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 			files = (
 				E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */,
 				E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */,
+				E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
