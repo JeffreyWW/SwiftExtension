@@ -59,6 +59,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E52CA18EC16828162A48655E /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
 		E52CA3F57D7D475CAD95C5DE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +84,7 @@
 				E52CA9E190A2EDDA11943303 /* ViewController.swift */,
 				E52CAEAE6C4186EB66A4A556 /* Main.storyboard */,
 				E52CA3F57D7D475CAD95C5DE /* Extension */,
+				E52CA18EC16828162A48655E /* TestFiles */,
 			);
 			path = SwiftExtension;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -180,6 +189,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

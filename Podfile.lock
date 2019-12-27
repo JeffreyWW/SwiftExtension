@@ -5,6 +5,7 @@ PODS:
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
+  - SnapKit (5.0.1)
   - SwifterSwift (5.1.0):
     - SwifterSwift/AppKit (= 5.1.0)
     - SwifterSwift/CoreGraphics (= 5.1.0)
@@ -30,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - RxCocoa (~> 5.0.1)
   - RxSwift (~> 5.0.1)
+  - SnapKit (~> 5.0.1)
   - SwifterSwift (~> 5.1.0)
 
 SPEC REPOS:
@@ -37,14 +39,16 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
     - SwifterSwift
 
 SPEC CHECKSUMS:
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
 
-PODFILE CHECKSUM: 0406eab45fd1d6ca4fc32dc408cd1afe07080845
+PODFILE CHECKSUM: ab7a2f4344cdff159123fd32707d087af8d7406f
 
 COCOAPODS: 1.8.4
