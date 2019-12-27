@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import SwifterSwift
-import sn
+import SnapKit
 class ViewController: UIViewController {
     let label = UILabel()
 
