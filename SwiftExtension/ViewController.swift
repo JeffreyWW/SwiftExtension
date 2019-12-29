@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import SnapKit
-
+import Moya
 
 class ViewController: UIViewController {
 //    @PropertyWrapperTest(color: .red, superViewColor: .yellow)
@@ -23,18 +23,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var a: String? = nil
-        var t :String = "1"
-        let b = a.map { (s: String) -> Int in
-            return 1
-        }
-//        self.view.addSubview(self.label)
-//        self.label.text = "this is a test"
-//        self.nibLabel.isHidden = false
-//        self.label.textColor = .red
-//        self.label.snp.makeConstraints { $0.center.equalToSuperview() }
-        // Do any additional setup after loading the view.
+        let rx = ProviderManager.stock.rx.request(.saveStock).mapString().subscribe(onSuccess: { string in
+            print(string)
+        })
     }
-
-
 }
