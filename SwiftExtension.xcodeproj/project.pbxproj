@@ -10,6 +10,7 @@
 		E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA9E190A2EDDA11943303 /* ViewController.swift */; };
 		E52CA343CA88DADAFED906F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52CA56AB12FAED9BFE8EE24 /* Assets.xcassets */; };
 		E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA304638BD019E614F42D /* AppDelegate.swift */; };
+		E52CA4D7C9A09F61468EDDAB /* PropertyWrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */; };
 		E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */; };
 		E52CAD8E706451723E464239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CAEAE6C4186EB66A4A556 /* Main.storyboard */; };
 		E52CAFD420487EADBC693EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CA300544DFF978B784543 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 		E52CA56AB12FAED9BFE8EE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52CA8F539C9D4C664FEF208 /* SwiftExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperTest.swift; sourceTree = "<group>"; };
 		E52CA9E190A2EDDA11943303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52CAB0B880D81D05BC10B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52CAC05AC3CBFD784F53D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		E52CA18EC16828162A48655E /* TestFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */,
 			);
 			path = TestFiles;
 			sourceTree = "<group>";
@@ -118,7 +121,7 @@
 				E52CAF1B8696EA79575A11A5 /* Sources */,
 				E52CAF7743825E14B951ED26 /* Frameworks */,
 				E52CA418BF49C90EA9AAA927 /* Resources */,
-				ABEC81256D91F3FE3FF20815 /* [CP] Embed Pods Frameworks */,
+				E5EB0B6E5606243F9CD40A13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,13 +174,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ABEC81256D91F3FE3FF20815 /* [CP] Embed Pods Frameworks */ = {
+		E5EB0B6E5606243F9CD40A13 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftExtension/Pods-SwiftExtension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -186,6 +192,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -229,6 +238,7 @@
 				E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */,
 				E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */,
 				E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */,
+				E52CA4D7C9A09F61468EDDAB /* PropertyWrapperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +321,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} /**";
 			};
 			name = Debug;
 		};
@@ -363,6 +374,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} /**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

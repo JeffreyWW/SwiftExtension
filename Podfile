@@ -10,6 +10,7 @@ target 'SwiftExtension' do
   pod 'RxCocoa', '~> 5.0.1'
   pod 'SwifterSwift', '~> 5.1.0'
   pod 'SnapKit', '~> 5.0.1'
+  pod 'Moya', '~> 13.0'
 
   # Pods for SwiftExtension
 
