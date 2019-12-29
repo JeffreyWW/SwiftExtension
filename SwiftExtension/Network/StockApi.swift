@@ -13,10 +13,10 @@ enum StockApi {
 
 extension StockApi: ApiTarget {
     public var baseURL: URL {
-        URL(string: "https://www.baidu.com")!
+        URL(string: "http://localhost:8080")!
     }
     public var path: String {
-        ""
+        "stock"
     }
     public var method: Moya.Method {
         .get
@@ -25,7 +25,7 @@ extension StockApi: ApiTarget {
         fatalError("sampleData has not been implemented")
     }
     var parameters: [String: Any] {
-        [:]
+        ["value": "1"]
     }
 }
 
