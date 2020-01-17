@@ -4,10 +4,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct TestModel {
     let title: String
-    let type: ViewController.Type
+    let viewController: UIViewController
 }
 
 enum TestEnum: String, CaseIterable {
@@ -15,7 +16,13 @@ enum TestEnum: String, CaseIterable {
 }
 
 extension TestEnum {
-    var type: AnyClass {
-        FullViewController.self
+    var controller: UIViewController {
+        var controller: UIViewController! = nil
+        switch self {
+        case .fullTest:
+            controller = FullSubViewController()
+        }
+        controller.title = self.rawValue
+        return controller
     }
 }

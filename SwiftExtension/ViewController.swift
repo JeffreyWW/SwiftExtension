@@ -58,11 +58,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let test = TestEnum.allCases[indexPath.row]
-        guard let type = test.type as? UIViewController.Type else {
-            return
-        }
-        let viewController = type.init()
-        viewController.title = test.rawValue
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(test.controller, animated: true)
     }
 }
