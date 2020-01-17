@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E52CA18B68489E5A24C2EC96 /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA7AFD67B290EB8E50FAD /* ApiTarget.swift */; };
 		E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA9E190A2EDDA11943303 /* ViewController.swift */; };
+		E52CA2C9AAEF20B382754F1A /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */; };
 		E52CA343CA88DADAFED906F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52CA56AB12FAED9BFE8EE24 /* Assets.xcassets */; };
 		E52CA3EAF80226849334F0BC /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */; };
 		E52CA41904F5462040F82050 /* CodingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA19AD0CF959ED8455AB2 /* CodingPlugin.swift */; };
@@ -17,6 +18,7 @@
 		E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */; };
 		E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */; };
 		E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA37A7124D682696E5773 /* ProviderManager.swift */; };
+		E52CAB4227CD4BD23BD85666 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACD6101355F04980EF9E /* FullViewController.swift */; };
 		E52CAC8D4DC6553A729A11B6 /* StockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA8E1DD0DE8010BBA809A /* StockApi.swift */; };
 		E52CAD8E706451723E464239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CAEAE6C4186EB66A4A556 /* Main.storyboard */; };
 		E52CAF22D23F8E488AB2F461 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA248310A74DDF5393495 /* Single+Response.swift */; };
@@ -28,6 +30,7 @@
 		5407D599D4727EC0B5AD5D80 /* Pods-SwiftExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtension.debug.xcconfig"; path = "Target Support Files/Pods-SwiftExtension/Pods-SwiftExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		79BF482332BFA668F862FB6F /* Pods_SwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52CA19AD0CF959ED8455AB2 /* CodingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingPlugin.swift; sourceTree = "<group>"; };
+		E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
 		E52CA248310A74DDF5393495 /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
 		E52CA304638BD019E614F42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52CA37A7124D682696E5773 /* ProviderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		E52CAB0B880D81D05BC10B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		E52CAC05AC3CBFD784F53D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E52CACD6101355F04980EF9E /* FullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		E52CAF3D1CB05AC5C62F461F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F75E2647ADA84637FE43BEDD /* Pods-SwiftExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtension.release.xcconfig"; path = "Target Support Files/Pods-SwiftExtension/Pods-SwiftExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,8 +83,18 @@
 			isa = PBXGroup;
 			children = (
 				E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */,
+				E52CA38A9C7C279CFD3BADAA /* FullTest */,
+				E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */,
 			);
 			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		E52CA38A9C7C279CFD3BADAA /* FullTest */ = {
+			isa = PBXGroup;
+			children = (
+				E52CACD6101355F04980EF9E /* FullViewController.swift */,
+			);
+			path = FullTest;
 			sourceTree = "<group>";
 		};
 		E52CA3F57D7D475CAD95C5DE /* Extension */ = {
@@ -283,6 +297,8 @@
 				E52CA3EAF80226849334F0BC /* MoyaProvider+Rx.swift in Sources */,
 				E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */,
 				E52CAF22D23F8E488AB2F461 /* Single+Response.swift in Sources */,
+				E52CAB4227CD4BD23BD85666 /* FullViewController.swift in Sources */,
+				E52CA2C9AAEF20B382754F1A /* TestEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,8 @@ import RxSwift
 import SnapKit
 import Moya
 
+private let cellId = "cellId"
+
 class ViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -18,15 +20,17 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         return tableView
     }()
-    private lazy var cell: UITableViewCell = {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        return cell
-    }()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigation()
+        setupTableView()
+        setupNavigation()
+    }
+
+    private func setupTableView() {
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
 
     private func setupNavigation() {
@@ -42,10 +46,23 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        TestEnum.allCases.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let test = TestEnum.allCases[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        cell.textLabel?.text = test.rawValue
         return cell
+    }
+
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let test = TestEnum.allCases[indexPath.row]
+        guard let type = test.type as? UIViewController.Type else {
+            return
+        }
+        let viewController = type.init()
+        viewController.title = test.rawValue
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
