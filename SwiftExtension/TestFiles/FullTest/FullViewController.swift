@@ -41,7 +41,9 @@ class FullViewController: UIViewController {
         let stack = UIStackView(arrangedSubviews: [btnLeft, btnRight])
         stack.distribution = .fillEqually
         view.addSubview(stack)
-        stack.snp.makeConstraints { $0.edges.equalToSuperview() }
+        stack.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
         return view
     }()
     private var extraCell: UITableViewCell = {
@@ -66,6 +68,8 @@ class FullViewController: UIViewController {
 
     private func setupTableView() {
         view.addSubview(tableView)
+        tableView.estimatedRowHeight = 200
+        tableView.height = UITableView.automaticDimension
         tableView.sectionHeaderHeight = sectionHeight
         tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
         tableView.delegate = self
@@ -77,7 +81,10 @@ class FullViewController: UIViewController {
         view.backgroundColor = .white
         if let firstVc = self.extraControllers?.first {
             extraCell.contentView.addSubview(firstVc.view)
-            firstVc.view.snp.makeConstraints { $0.edges.equalToSuperview() }
+            firstVc.view.snp.makeConstraints {
+                $0.edges.equalToSuperview()
+                $0.height.greaterThanOrEqualTo(view.height - sectionHeight).priority(.required)
+            }
         }
         if let extraControllers = self.extraControllers, extraControllers.isEmpty != true {
             extraControllers.forEach { controller in
