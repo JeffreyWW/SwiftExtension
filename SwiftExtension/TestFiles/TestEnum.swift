@@ -13,6 +13,7 @@ struct TestModel {
 
 enum TestEnum: String, CaseIterable {
     case fullTest = "满屏测试"
+    case chartTest = "k线测试"
 }
 
 extension TestEnum {
@@ -21,6 +22,8 @@ extension TestEnum {
         switch self {
         case .fullTest:
             controller = FullSubViewController()
+        case .chartTest:
+            controller = ChartTestViewController()
         }
         controller.title = self.rawValue
         return controller

@@ -20,9 +20,11 @@
 		E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */; };
 		E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */; };
 		E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA37A7124D682696E5773 /* ProviderManager.swift */; };
+		E52CAAA864BA22FA843879BB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACE155DB1B45EECF5B7E /* TestViewController.swift */; };
 		E52CAB4227CD4BD23BD85666 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACD6101355F04980EF9E /* FullViewController.swift */; };
 		E52CAC8D4DC6553A729A11B6 /* StockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA8E1DD0DE8010BBA809A /* StockApi.swift */; };
 		E52CAD8E706451723E464239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CAEAE6C4186EB66A4A556 /* Main.storyboard */; };
+		E52CAEC36B2A537F6AD014D9 /* ChartTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAD68B1D0CEAA2DBBB0BA /* ChartTestViewController.swift */; };
 		E52CAF22D23F8E488AB2F461 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA248310A74DDF5393495 /* Single+Response.swift */; };
 		E52CAF8DDBFDE48817EC87E6 /* FullSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */; };
 		E52CAFD420487EADBC693EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CA300544DFF978B784543 /* LaunchScreen.storyboard */; };
@@ -49,7 +51,9 @@
 		E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		E52CAC05AC3CBFD784F53D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52CACD6101355F04980EF9E /* FullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
+		E52CACE155DB1B45EECF5B7E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullSubViewController.swift; sourceTree = "<group>"; };
+		E52CAD68B1D0CEAA2DBBB0BA /* ChartTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTestViewController.swift; sourceTree = "<group>"; };
 		E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraSecondViewController.swift; sourceTree = "<group>"; };
 		E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		E52CAF3D1CB05AC5C62F461F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */,
 				E52CA38A9C7C279CFD3BADAA /* FullTest */,
 				E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */,
+				E52CACE155DB1B45EECF5B7E /* TestViewController.swift */,
+				E52CAFDD4E9DFA4DA466252F /* ChartTest */,
 			);
 			path = TestFiles;
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 				E52CA8F539C9D4C664FEF208 /* SwiftExtension.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E52CAFDD4E9DFA4DA466252F /* ChartTest */ = {
+			isa = PBXGroup;
+			children = (
+				E52CAD68B1D0CEAA2DBBB0BA /* ChartTestViewController.swift */,
+			);
+			path = ChartTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +325,8 @@
 				E52CAF8DDBFDE48817EC87E6 /* FullSubViewController.swift in Sources */,
 				E52CA131EE7F54B8729D4F01 /* ExtraFirstViewController.swift in Sources */,
 				E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */,
+				E52CAAA864BA22FA843879BB /* TestViewController.swift in Sources */,
+				E52CAEC36B2A537F6AD014D9 /* ChartTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

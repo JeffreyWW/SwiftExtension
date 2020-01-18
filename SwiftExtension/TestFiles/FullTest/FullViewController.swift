@@ -22,7 +22,7 @@ extension ExtaController {
     }
 }
 
-class FullViewController: UIViewController {
+class FullViewController: TestViewController {
     let extraControllers: [ExtaController]?
     let tableView = UITableView()
     let sectionTop: UIView = {
@@ -64,29 +64,7 @@ class FullViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupNavigation()
         setupTableView()
-    }
-
-    private func setupNavigation() {
-        let item = UIBarButtonItem(title: "test", style: .plain, target: self, action: #selector(clickMe))
-        navigationItem.leftBarButtonItem = item
-    }
-
-    var num = 0
-
-    @objc private func clickMe() {
-        guard let extraControllers = self.extraControllers else {
-            return
-        }
-        num += 1
-//        if num == 1{
-//            self.transition(from: extraControllers[0], to: extraControllers[1], duration: 1, animations: nil)
-//            self.tableView.reloadData()
-//        } else {
-//            self.transition(from: extraControllers[1], to: extraControllers[0], duration: 1, animations: nil)
-//            self.tableView.reloadData()
-//        }
     }
 
     private func setupTableView() {
