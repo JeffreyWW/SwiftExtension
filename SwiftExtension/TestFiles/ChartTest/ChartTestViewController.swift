@@ -14,9 +14,6 @@ class ChartTestViewController: TestViewController {
         var entries = dataSource.map { index in
             BarChartDataEntry(x: Double(index), y: Double(index) * 2)
         }
-//        entries.append(BarChartDataEntry(x: 10, y: 4))
-//        entries.append(BarChartDataEntry(x: 2, y: 4))
-//        entries.append(BarChartDataEntry(x: -1, y: 4))
         return entries
     }()
     private let chartView = CombinedChartView()
@@ -29,6 +26,8 @@ class ChartTestViewController: TestViewController {
 
     private func setupChartView() {
         view.addSubview(chartView)
+        //类似k线自动缩放
+//        chartView.autoScaleMinMaxEnabled = true
         chartView.xAxis.labelPosition = .bottom
         chartView.scaleYEnabled = false
         chartView.leftAxis.labelCount = 4
@@ -40,47 +39,21 @@ class ChartTestViewController: TestViewController {
             $0.height.equalTo(400)
         }
         let data = CombinedChartData()
-        var entries = self.entries
-        let entry = BarChartDataEntry(x: 2, y: 6)
-//        entries.append(entry)
-        var set = BarChartDataSet(entries: entries)
-        let set2 = BarChartDataSet(entries: [entry])
-        set2.setColor(.yellow)
-        set.setColor(.red)
-//        set.append(BarChartDataEntry(x: 10, y: 4))
-//        set.insert(BarChartDataEntry(x: 2, y: 4), at: 0)
-        let barData = BarChartData(dataSets: [set])
+        let set = BarChartDataSet(entries: entries)
+        let barData = BarChartData(dataSet: set)
         data.barData = barData
         chartView.data = data
         chartView.setVisibleXRangeMaximum(4)
-//        chartView.setVisibleXRange(minXRange: 4, maxXRange: 4)
-        let a = chartView.highestVisibleX
-        let b = chartView.viewPortHandler.contentRight
         chartView.moveViewToX(chartView.xAxis.axisMaximum)
-//        chartView.
-        //直接加set不行,只显示边框
     }
 
     override func clickTest() {
         super.clickTest()
         let entry = BarChartDataEntry(x: 10, y: 6)
-        let set = BarChartDataSet(entries: [entry])
-//        chartView.data.addDataSet(set)
+        let entry2 = BarChartDataEntry(x: 11, y: 6)
         chartView.data?.addEntry(entry, dataSetIndex: 0)
-        chartView.notifyDataSetChanged()
-        chartView.data?.notifyDataChanged()
-
-        chartView.setVisibleXRangeMaximum(4)
-        guard let data = chartView.data as? CombinedChartData else {
-            return
-        }
-        return;
-        data.barData.addDataSet(set)
-
-
-
+        chartView.data?.addEntry(entry2, dataSetIndex: 0)
         chartView.notifyDataSetChanged()
         chartView.setVisibleXRangeMaximum(4)
-
     }
 }
