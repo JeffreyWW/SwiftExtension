@@ -6,6 +6,7 @@
 import Foundation
 import UIKit
 import SwifterSwift
+import RxSwift
 
 private let sectionHeight: CGFloat = 40
 
@@ -63,7 +64,29 @@ class FullViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupNavigation()
         setupTableView()
+    }
+
+    private func setupNavigation() {
+        let item = UIBarButtonItem(title: "test", style: .plain, target: self, action: #selector(clickMe))
+        navigationItem.leftBarButtonItem = item
+    }
+
+    var num = 0
+
+    @objc private func clickMe() {
+        guard let extraControllers = self.extraControllers else {
+            return
+        }
+        num += 1
+//        if num == 1{
+//            self.transition(from: extraControllers[0], to: extraControllers[1], duration: 1, animations: nil)
+//            self.tableView.reloadData()
+//        } else {
+//            self.transition(from: extraControllers[1], to: extraControllers[0], duration: 1, animations: nil)
+//            self.tableView.reloadData()
+//        }
     }
 
     private func setupTableView() {
@@ -91,6 +114,13 @@ class FullViewController: UIViewController {
                 self.addChild(controller)
             }
         }
+//        Completable.empty().delay(.seconds(2), scheduler: MainScheduler.instance).subscribe(onCompleted: {
+////            self.transition(from: self.extraControllers[0], to: self.extraControllers[1], duration: 1, animations: nil)
+//            self.transition(from: self.extraControllers[0], to: self.extraControllers[1], duration: 1, animations: nil)
+//        })
+//        Completable.empty().delay(.seconds(2), scheduler: MainScheduler.instance).subscribe(onCompleted: {
+//            self.transition(from: self.extraControllers[0], to: self.extraControllers[1], duration: 1, animations: nil)
+//        })
     }
 }
 

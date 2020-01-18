@@ -8,7 +8,7 @@ import UIKit
 
 class FullSubViewController: FullViewController {
     init() {
-        super.init(extraControllers: [ExtraFirstViewController()])
+        super.init(extraControllers: [ExtraFirstViewController(), ExtraSecondViewController()])
     }
 
     required init?(coder: NSCoder) {

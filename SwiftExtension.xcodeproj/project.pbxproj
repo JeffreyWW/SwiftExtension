@@ -18,6 +18,7 @@
 		E52CA4D7C9A09F61468EDDAB /* PropertyWrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */; };
 		E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */; };
 		E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */; };
+		E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */; };
 		E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA37A7124D682696E5773 /* ProviderManager.swift */; };
 		E52CAB4227CD4BD23BD85666 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACD6101355F04980EF9E /* FullViewController.swift */; };
 		E52CAC8D4DC6553A729A11B6 /* StockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA8E1DD0DE8010BBA809A /* StockApi.swift */; };
@@ -49,6 +50,7 @@
 		E52CAC05AC3CBFD784F53D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52CACD6101355F04980EF9E /* FullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullSubViewController.swift; sourceTree = "<group>"; };
+		E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraSecondViewController.swift; sourceTree = "<group>"; };
 		E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		E52CAF3D1CB05AC5C62F461F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F75E2647ADA84637FE43BEDD /* Pods-SwiftExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtension.release.xcconfig"; path = "Target Support Files/Pods-SwiftExtension/Pods-SwiftExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				E52CACD6101355F04980EF9E /* FullViewController.swift */,
 				E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */,
 				E52CAA7DD4CA6E275FF70B4B /* ExtraFirstViewController.swift */,
+				E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */,
 			);
 			path = FullTest;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				E52CA2C9AAEF20B382754F1A /* TestEnum.swift in Sources */,
 				E52CAF8DDBFDE48817EC87E6 /* FullSubViewController.swift in Sources */,
 				E52CA131EE7F54B8729D4F01 /* ExtraFirstViewController.swift in Sources */,
+				E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

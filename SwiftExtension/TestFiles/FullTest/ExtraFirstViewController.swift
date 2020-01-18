@@ -37,7 +37,8 @@ class ExtraFirstViewController: UIViewController, ExtaController {
         super.viewDidLoad()
         view.backgroundColor = .yellow
         setupCollectionView()
-        reloadData()
+        collectionView.reloadData()
+//        reloadData()
     }
 
     private func setupCollectionView() {
