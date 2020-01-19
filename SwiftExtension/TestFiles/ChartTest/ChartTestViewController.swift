@@ -49,8 +49,8 @@ class ChartTestViewController: TestViewController {
 
     override func clickTest() {
         super.clickTest()
-        let entry = BarChartDataEntry(x: 10, y: 6)
-        let entry2 = BarChartDataEntry(x: 11, y: 6)
+        let entry = BarChartDataEntry(x: 1, y: 6)
+        let entry2 = BarChartDataEntry(x: 2, y: 6)
         chartView.data?.addEntry(entry, dataSetIndex: 0)
         chartView.data?.addEntry(entry2, dataSetIndex: 0)
         chartView.notifyDataSetChanged()
