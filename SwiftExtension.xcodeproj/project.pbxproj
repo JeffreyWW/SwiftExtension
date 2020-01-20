@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52CA080130F2433F94B04E4 /* ChildFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA2236B987CB659A0BF0C /* ChildFirstViewController.swift */; };
 		E52CA131EE7F54B8729D4F01 /* ExtraFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAA7DD4CA6E275FF70B4B /* ExtraFirstViewController.swift */; };
 		E52CA18B68489E5A24C2EC96 /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA7AFD67B290EB8E50FAD /* ApiTarget.swift */; };
 		E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA9E190A2EDDA11943303 /* ViewController.swift */; };
@@ -15,8 +16,8 @@
 		E52CA3EAF80226849334F0BC /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */; };
 		E52CA41904F5462040F82050 /* CodingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA19AD0CF959ED8455AB2 /* CodingPlugin.swift */; };
 		E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA304638BD019E614F42D /* AppDelegate.swift */; };
-		E52CA4D7C9A09F61468EDDAB /* PropertyWrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */; };
 		E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */; };
+		E52CA67C9F5A66E378EFFA6E /* PropertyWrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA91B71122D6CEB3FA784 /* PropertyWrapperTest.swift */; };
 		E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */; };
 		E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */; };
 		E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA37A7124D682696E5773 /* ProviderManager.swift */; };
@@ -26,6 +27,7 @@
 		E52CAD8E706451723E464239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CAEAE6C4186EB66A4A556 /* Main.storyboard */; };
 		E52CAEC36B2A537F6AD014D9 /* ChartTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAD68B1D0CEAA2DBBB0BA /* ChartTestViewController.swift */; };
 		E52CAF22D23F8E488AB2F461 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA248310A74DDF5393495 /* Single+Response.swift */; };
+		E52CAF6152E009BB9DF51699 /* ChildSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA096E2EB4A46E575D1E7 /* ChildSecondViewController.swift */; };
 		E52CAF8DDBFDE48817EC87E6 /* FullSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */; };
 		E52CAFD420487EADBC693EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CA300544DFF978B784543 /* LaunchScreen.storyboard */; };
 		ED6906E53D3E4BD65063C656 /* Pods_SwiftExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BF482332BFA668F862FB6F /* Pods_SwiftExtension.framework */; };
@@ -34,8 +36,10 @@
 /* Begin PBXFileReference section */
 		5407D599D4727EC0B5AD5D80 /* Pods-SwiftExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtension.debug.xcconfig"; path = "Target Support Files/Pods-SwiftExtension/Pods-SwiftExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		79BF482332BFA668F862FB6F /* Pods_SwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52CA096E2EB4A46E575D1E7 /* ChildSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSecondViewController.swift; sourceTree = "<group>"; };
 		E52CA19AD0CF959ED8455AB2 /* CodingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingPlugin.swift; sourceTree = "<group>"; };
 		E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
+		E52CA2236B987CB659A0BF0C /* ChildFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildFirstViewController.swift; sourceTree = "<group>"; };
 		E52CA248310A74DDF5393495 /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
 		E52CA304638BD019E614F42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52CA37A7124D682696E5773 /* ProviderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
@@ -44,7 +48,7 @@
 		E52CA8E1DD0DE8010BBA809A /* StockApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockApi.swift; sourceTree = "<group>"; };
 		E52CA8F539C9D4C664FEF208 /* SwiftExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52CA91AD1885FF452A8E002 /* SwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
-		E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperTest.swift; sourceTree = "<group>"; };
+		E52CA91B71122D6CEB3FA784 /* PropertyWrapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperTest.swift; sourceTree = "<group>"; };
 		E52CA9E190A2EDDA11943303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52CAA7DD4CA6E275FF70B4B /* ExtraFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraFirstViewController.swift; sourceTree = "<group>"; };
 		E52CAB0B880D81D05BC10B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,11 +96,12 @@
 		E52CA18EC16828162A48655E /* TestFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E52CA952EAD0BF26D9C7DD13 /* PropertyWrapperTest.swift */,
 				E52CA38A9C7C279CFD3BADAA /* FullTest */,
 				E52CA1BB6F04CF5E52EAD186 /* TestEnum.swift */,
 				E52CACE155DB1B45EECF5B7E /* TestViewController.swift */,
 				E52CAFDD4E9DFA4DA466252F /* ChartTest */,
+				E52CA768CDA0424148C605D4 /* ProtertyTest */,
+				E52CA932928A778F38CBA4D0 /* ParentTest */,
 			);
 			path = TestFiles;
 			sourceTree = "<group>";
@@ -145,6 +150,23 @@
 				01A50C49C4B5CDB8AC70A3EB /* Pods */,
 				497892CC7FFBB277FD3EA355 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		E52CA768CDA0424148C605D4 /* ProtertyTest */ = {
+			isa = PBXGroup;
+			children = (
+				E52CA91B71122D6CEB3FA784 /* PropertyWrapperTest.swift */,
+			);
+			path = ProtertyTest;
+			sourceTree = "<group>";
+		};
+		E52CA932928A778F38CBA4D0 /* ParentTest */ = {
+			isa = PBXGroup;
+			children = (
+				E52CA2236B987CB659A0BF0C /* ChildFirstViewController.swift */,
+				E52CA096E2EB4A46E575D1E7 /* ChildSecondViewController.swift */,
+			);
+			path = ParentTest;
 			sourceTree = "<group>";
 		};
 		E52CAA95A645582AF2D4F8FF /* Moya+RxSwift */ = {
@@ -314,7 +336,6 @@
 				E52CA486B196C987592CE4B8 /* AppDelegate.swift in Sources */,
 				E52CA29E2342CFC94204B11A /* ViewController.swift in Sources */,
 				E52CA58E3B3F471A970AFA4D /* SwiftExtensions.swift in Sources */,
-				E52CA4D7C9A09F61468EDDAB /* PropertyWrapperTest.swift in Sources */,
 				E52CAC8D4DC6553A729A11B6 /* StockApi.swift in Sources */,
 				E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */,
 				E52CA18B68489E5A24C2EC96 /* ApiTarget.swift in Sources */,
@@ -329,6 +350,9 @@
 				E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */,
 				E52CAAA864BA22FA843879BB /* TestViewController.swift in Sources */,
 				E52CAEC36B2A537F6AD014D9 /* ChartTestViewController.swift in Sources */,
+				E52CA67C9F5A66E378EFFA6E /* PropertyWrapperTest.swift in Sources */,
+				E52CA080130F2433F94B04E4 /* ChildFirstViewController.swift in Sources */,
+				E52CAF6152E009BB9DF51699 /* ChildSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
