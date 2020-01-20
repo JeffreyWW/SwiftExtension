@@ -7,4 +7,15 @@ import Foundation
 import UIKit
 
 class ChildSecondViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+    }
+
+    override func didMove(toParent parent: UIViewController?) {
+        super.didMove(toParent: parent)
+    }
 }

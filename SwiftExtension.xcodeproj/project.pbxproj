@@ -21,6 +21,7 @@
 		E52CA6E46FC267FC465F8270 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CABFE72FAA44F3CB15C15 /* Observable+Response.swift */; };
 		E52CA70AA1DC46694E661B12 /* ExtraSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */; };
 		E52CA8A539CDCB8B3265E0D3 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA37A7124D682696E5773 /* ProviderManager.swift */; };
+		E52CAA073AD36608A286D66B /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CAD438A88E88F5A3BDEB7 /* ParentViewController.swift */; };
 		E52CAAA864BA22FA843879BB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACE155DB1B45EECF5B7E /* TestViewController.swift */; };
 		E52CAB4227CD4BD23BD85666 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CACD6101355F04980EF9E /* FullViewController.swift */; };
 		E52CAC8D4DC6553A729A11B6 /* StockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52CA8E1DD0DE8010BBA809A /* StockApi.swift */; };
@@ -57,6 +58,7 @@
 		E52CACD6101355F04980EF9E /* FullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		E52CACE155DB1B45EECF5B7E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E52CAD2C021B80CD0766F712 /* FullSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullSubViewController.swift; sourceTree = "<group>"; };
+		E52CAD438A88E88F5A3BDEB7 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		E52CAD68B1D0CEAA2DBBB0BA /* ChartTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTestViewController.swift; sourceTree = "<group>"; };
 		E52CADF68EDCA28159118AE9 /* ExtraSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraSecondViewController.swift; sourceTree = "<group>"; };
 		E52CAEB56B0373946F96CF34 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				E52CA2236B987CB659A0BF0C /* ChildFirstViewController.swift */,
 				E52CA096E2EB4A46E575D1E7 /* ChildSecondViewController.swift */,
+				E52CAD438A88E88F5A3BDEB7 /* ParentViewController.swift */,
 			);
 			path = ParentTest;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				E52CA67C9F5A66E378EFFA6E /* PropertyWrapperTest.swift in Sources */,
 				E52CA080130F2433F94B04E4 /* ChildFirstViewController.swift in Sources */,
 				E52CAF6152E009BB9DF51699 /* ChildSecondViewController.swift in Sources */,
+				E52CAA073AD36608A286D66B /* ParentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
